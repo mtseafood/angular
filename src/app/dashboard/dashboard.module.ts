@@ -13,6 +13,7 @@ import { FormComponent } from './components/form/form.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [SidenavWrapperComponent, DashboardComponent, InfoComponent, UserComponent, FormComponent],
@@ -27,7 +28,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatListModule,
     MatToolbarModule,
     MatFormFieldModule,
-    MatSelectModule
+    MatCardModule
   ]
 })
 export class DashboardModule { }

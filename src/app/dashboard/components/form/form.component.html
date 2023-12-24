@@ -1,4 +1,5 @@
 <div class="container">
+  <mat-card>
   <div *ngIf="!submitted">
     <h1>Basic Template Driven Form</h1>
     <form #heroForm="ngForm" (ngSubmit)="onSubmit(heroForm.value)">
@@ -43,4 +44,5 @@
     <br /><br />
     <button class="btn btn-default" (click)="submitted=false">Edit</button>
   </div>
+  </mat-card>
 </div>
