@@ -9,18 +9,25 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { SidenavWrapperComponent } from './components/sidenav-wrapper/sidenav-wrapper.component';
+import { FormComponent } from './components/form/form.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [SidenavWrapperComponent, DashboardComponent, InfoComponent, UserComponent],
+  declarations: [SidenavWrapperComponent, DashboardComponent, InfoComponent, UserComponent, FormComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,
-
+    FormsModule,
+    ReactiveFormsModule,
     // NG Material Modules
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatFormFieldModule,
+    MatSelectModule
   ]
 })
 export class DashboardModule { }

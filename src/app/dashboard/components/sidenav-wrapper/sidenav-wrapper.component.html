@@ -22,13 +22,17 @@
         <span *ngIf="isExpanded" class="menu-item">User</span>
       </mat-list-item>
 
+      <mat-list-item [routerLink]="'form'">
+        <mat-icon mat-list-icon>supervisor_account</mat-icon>
+        <span *ngIf="isExpanded" class="menu-item">SMAUG Form</span>
+      </mat-list-item>
     </mat-nav-list>
   </mat-sidenav>
 
   <!-- Content - rendered Content for the current router path into the <router-outlet>, e.g. /dashboard or /info-->
   <mat-sidenav-content>
-    <mat-toolbar>
-      <h4>Hello everyone</h4>
+    <mat-toolbar color="primary">
+      <h4>SMAPI Fort</h4>
     </mat-toolbar>
     <router-outlet></router-outlet>
   </mat-sidenav-content>
